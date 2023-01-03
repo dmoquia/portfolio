@@ -39,6 +39,10 @@ body {
   background-size: cover;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   text-decoration: none;
   color: #e8e7e6;
