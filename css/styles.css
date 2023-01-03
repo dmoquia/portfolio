@@ -393,12 +393,11 @@ nav ul li a:hover {
   align-items: center;
 }
 .contact-section .contact-container .right-contact {
-  padding: 2em;
   margin: 0 1em;
-  width: 50%;
+  width: 100%;
 }
 .contact-section .contact-container .left-contact {
-  width: 50%;
+  width: 100%;
 }
 .contact-section .contact-container img {
   width: 100%;
