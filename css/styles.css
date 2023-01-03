@@ -117,6 +117,13 @@ nav ul li a:hover {
   nav ul li:hover {
     background: none;
   }
+  nav ul li a {
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #f19713;
+  }
+  nav ul li a:hover {
+    border-bottom: none;
+  }
 }
 
 .banner {
