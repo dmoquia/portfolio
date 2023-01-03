@@ -65,6 +65,7 @@ h2 {
 @media screen and (min-width: 768px) {
   header {
     height: 100vh;
+    padding: 2em 0;
   }
   .container {
     max-width: 1159px;
@@ -180,7 +181,7 @@ nav ul li a:hover {
     font-size: 2rem;
   }
   .banner .banner-info p {
-    font-size: 0.5em;
+    font-size: 1rem;
     margin: 1em auto;
   }
   .banner img {
