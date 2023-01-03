@@ -273,11 +273,6 @@ nav {
         grid-template-columns: 3fr 1fr;
       }
     }
-
-    .about-info {
-      grid-template-columns: 1fr;
-      padding: 0 2em;
-    }
   }
 }
 
@@ -288,7 +283,7 @@ nav {
   padding: 2rem;
   height: 100%;
   h2 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     border-bottom: 5px solid $primary-color;
     margin: 5rem 0;
   }
@@ -403,12 +398,14 @@ nav {
       }
     }
   }
-  @media (min-width: 426px) and (max-width: 768px) {
-    h2 {
-      font-size: 2.5rem;
+  @media screen and (min-width: 768px) {
+    & {
+      h2 {
+        font-size: 3.5rem;
+      }
     }
     .project-list {
-      flex-direction: column;
+      flex-direction: row;
       figure {
         width: 100%;
       }
@@ -431,12 +428,20 @@ nav {
   .contact-container {
     max-width: 1159px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
-
+    .right-contact {
+      padding: 2em;
+      margin: 0 1em;
+      width: 50%;
+    }
+    .left-contact {
+      width: 50%;
+    }
     img {
-      width: 80%;
+      width: 100%;
     }
     .input-box {
       margin: 1rem 0;
@@ -480,24 +485,11 @@ nav {
       }
     }
   }
-  @media (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     .contact-container {
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       margin: 0 auto;
       width: 100%;
-    }
-
-    .right-contact {
-      margin: 0 1rem;
-      width: 100%;
-      .input-box {
-        input {
-          width: 100%;
-        }
-        textarea {
-          width: 100%;
-        }
-      }
     }
   }
 }
@@ -513,7 +505,7 @@ nav {
   height: 100%;
   .links {
     .footer-nav {
-      display: flex;
+      display: block;
       list-style-type: none;
       li {
         padding: 2rem;
@@ -526,7 +518,7 @@ nav {
   }
   .socials {
     .social-links {
-      display: flex;
+      display: block;
       list-style-type: none;
       font-size: 1.5rem;
       li {
@@ -541,10 +533,15 @@ nav {
       }
     }
   }
-  @media (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     .links {
       .footer-nav {
-        display: block;
+        display: flex;
+      }
+    }
+    .socials {
+      .social-links {
+        display: flex;
       }
     }
   }

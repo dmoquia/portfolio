@@ -237,10 +237,6 @@ nav ul li a:hover {
   .about-section .about-info {
     grid-template-columns: 3fr 1fr;
   }
-  .about-section .about-info {
-    grid-template-columns: 1fr;
-    padding: 0 2em;
-  }
 }
 
 .projects-section {
@@ -249,7 +245,7 @@ nav ul li a:hover {
   height: 100%;
 }
 .projects-section h2 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   border-bottom: 5px solid #f19713;
   margin: 5rem 0;
 }
@@ -353,12 +349,12 @@ nav ul li a:hover {
   transform: scale(1.5);
   pointer-events: auto;
 }
-@media (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .projects-section h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .projects-section .project-list {
-    flex-direction: column;
+    flex-direction: row;
   }
   .projects-section .project-list figure {
     width: 100%;
@@ -379,12 +375,21 @@ nav ul li a:hover {
 .contact-section .contact-container {
   max-width: 1159px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
 }
+.contact-section .contact-container .right-contact {
+  padding: 2em;
+  margin: 0 1em;
+  width: 50%;
+}
+.contact-section .contact-container .left-contact {
+  width: 50%;
+}
 .contact-section .contact-container img {
-  width: 80%;
+  width: 100%;
 }
 .contact-section .contact-container .input-box {
   margin: 1rem 0;
@@ -427,20 +432,10 @@ nav ul li a:hover {
   color: turquoise;
   font-weight: 700;
 }
-@media (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .contact-section .contact-container {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 0 auto;
-    width: 100%;
-  }
-  .contact-section .right-contact {
-    margin: 0 1rem;
-    width: 100%;
-  }
-  .contact-section .right-contact .input-box input {
-    width: 100%;
-  }
-  .contact-section .right-contact .input-box textarea {
     width: 100%;
   }
 }
@@ -454,14 +449,14 @@ nav ul li a:hover {
   height: 100%;
 }
 .footer-section .links .footer-nav {
-  display: flex;
+  display: block;
   list-style-type: none;
 }
 .footer-section .links .footer-nav li {
   padding: 2rem;
 }
 .footer-section .socials .social-links {
-  display: flex;
+  display: block;
   list-style-type: none;
   font-size: 1.5rem;
 }
@@ -475,8 +470,11 @@ nav ul li a:hover {
   transform: scale(1.5);
   color: #e8e7e6;
 }
-@media (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer-section .links .footer-nav {
-    display: block;
+    display: flex;
+  }
+  .footer-section .socials .social-links {
+    display: flex;
   }
 }
