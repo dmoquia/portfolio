@@ -26,7 +26,7 @@ window.onload = function () {
   setTimeout(function () {
     var x = document.querySelectorAll(".anime-containter");
     for (var i = 0; i < x.length; i++) {
-      x[i].style.display = "block";
+      x[i].style.display = "flex";
       x[i].style.overflowX = "hidden";
     }
   }, 500);
