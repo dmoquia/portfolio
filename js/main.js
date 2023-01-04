@@ -22,6 +22,15 @@ $(document).ready(function () {
   });
 });
 AOS.init();
+window.onload = function () {
+  setTimeout(function () {
+    var x = document.querySelectorAll(".anime-containter");
+    for (var i = 0; i < x.length; i++) {
+      x[i].style.display = "block";
+      x[i].style.overflowX = "hidden";
+    }
+  }, 500);
+};
 
 $(document).ready(function () {
   $("#menu").click(function () {

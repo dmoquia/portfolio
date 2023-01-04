@@ -35,6 +35,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.aos-init:not(.aos-animate):after {
+  position: fixed;
+}
+
 body {
   font-family: $font-stack;
   font-size: 16px;
